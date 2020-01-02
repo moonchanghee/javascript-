@@ -30,7 +30,7 @@ console.log(dog2.walk());
 Dog 객체의 프로토타입은 superanimal로 바뀌었지만 dog1을 출력하면 Animal 프로토타입인 종종이 출력된다
 따라서 프로토타입 체인은 인스턴스가 생성된 시점에서 고정되어 그 후의 변경에는 관여치 않고 보존된다.
 
-//constructor,instanceof 
+
 
 
 
