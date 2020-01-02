@@ -1,0 +1,51 @@
+////동적으로 메소드 추가////////////////////////////////////
+var Member = function (firstName,lastName){
+    this.firstName = firstName;
+    this.lastName = lastName;
+};
+
+var mem = new Member('창희','문');
+mem.Name = function(){  //생성된 인스턴스에 대해서 메소드를 추가한거이므로
+    return this.lastName + '' +this.firstName; // 다른 인스턴스에서 이 메소드르사용할수없다
+}                       //동일한 클래스를 기초로 생성된 인스턴스라 할지라도 각각이 지닌 
+                        //멤버가 동일하다고 한정할 수 없다..
+console.log(mem.Name());
+
+
+////프로토 타입 /////////////////////////////////////////////////
+var Member = function(firstName, lastName){
+    this.firstName = firstName;
+    this.lastName = lastName;
+}
+
+
+var mem = new Member('창희','문');
+
+
+Member.prototype.getName = function(){ //프로포타입 메소드 추가 형태
+    return this.lastName + this.firstName;
+}
+
+console.log(mem.getName());
+
+var mem2 = new Member('길동','홍');
+console.log(mem2.getName());
+
+//////////////프로토타입 객체 리터럴로 정의하기/////////////////////
+
+var Member = function(first,second){
+    this.first = first;
+    this.second = second;
+}
+Member.prototype = {
+getName : function(){
+    
+    //함수실행문
+},
+toString : function(){
+    
+    //함수실행문
+
+}
+
+};
