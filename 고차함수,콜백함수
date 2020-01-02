@@ -1,0 +1,20 @@
+# 고차함수 
++ 인자로 함수를 받거나 함수를 리턴하는 형식의 함수
+
+# 콜백함수
++ 고차함수의 인자로 전달되는 함수를 의미한다
+
+function arrayWalk(data, f) {
+    for (var key in data) {
+        f(data[key], key);
+    }
+}
+function showElement(value, key) {
+    console.log(key + ':' + value);
+}
+var ary = [1, 2, 3, 4, 5, 6]
+arrayWalk(ary, showElement)
+
+위 코드에서 함수 showElement 를 인자로 받는 arryWalk함수는 고차함수이다.
+반대로 인자로 호출되는 showElement 함수는 콜백함수이다.
+
