@@ -1,0 +1,15 @@
+# 프로퍼티,메소드
+프로퍼티 
+내부함수에서 외부함수의 변수를 참조할수있다 그 외부함수가 끝이나도 변수를 기억해서 사용할수있다.
+일종의 기억 영역을 제공하는 구조 
+function closure(init) {
+    var counter = init;
+
+    return function () { //클로저 함수가 종료되어도 익명함수에서 카운터 변수를                         
+        return ++counter;//참조하고 있으므로 값이 파기되지않고 유지된다
+    }
+}
+var myclosure = closure(1);
+console.log(myclosure());
+console.log(myclosure());
+console.log(myclosure());
