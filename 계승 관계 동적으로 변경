@@ -1,0 +1,36 @@
+# 계승관계 동적을 변경가능
+동일한 객체가 어느 타이밍에서는 객체x를 계승 하다가 이후의 다른 타이밍에서 객체y를 계승할수있다
+
+var Animal = function(){}
+
+Animal.prototype = {
+    walk : function(){
+        console.log('종종......');
+    }
+};
+
+var SuperAnimal = function(){};
+
+SuperAnimal.prototype = {
+    walk : function(){
+        console.log('다다다닷.....');
+    }
+};
+
+var Dog = function(){};
+
+Dog.prototype = new Animal();
+var dog1 = new Dog();
+
+console.log(dog1.walk());
+Dog.prototype = new SuperAnimal();
+var dog2 = new Dog();
+console.log(dog2.walk());
+
+Dog 객체의 프로토타입은 superanimal로 바뀌었지만 dog1을 출력하면 Animal 프로토타입인 종종이 출력된다
+따라서 프로토타입 체인은 인스턴스가 생성된 시점에서 고정되어 그 후의 변경에는 관여치 않고 보존된다.
+
+//constructor,instanceof 
+
+
+
