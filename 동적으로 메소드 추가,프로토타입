@@ -73,5 +73,7 @@ toString : function(){
 	불가능하고 참조값이 그대로 출력된다	256p
 
 
-기저 클래스(베이스 클래스,슈퍼클래스)의 생성자에 인수를 건네는 경우
-	Animal.call(this, 'huge', 'foo');	 this 란  Animal 생성자를 현재의 this로 호출하시오 라는 의미이다
+	
+	
+	
+	
