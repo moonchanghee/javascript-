@@ -1,0 +1,19 @@
+이벤트 리스너/ 이벤트 핸들러는 인수로 이벤트 객체를 받는다 
+이벤트 객체란
+
++html
+
+   <form ><input id= "btn"  type="button" value="클릭"></form>
+
+
++js
+
+document.addEventListener('DOMContentLoaded' , function(){
+    doucument.getElementById('btn').addEventListener('click',function(e){ //이벤트 리스너/이벤트 핸들러 안에서 변수 e로 액세스가능
+        var target = e.target;                                          //인수명은 관례적으로 e , ev 로 한다 376p 이벤트객체주요멤버
+        console.log('발생원:' + target.nodeName + target.id);
+        console.log('종류: + e.type');
+
+    },false);
+},false);
+
