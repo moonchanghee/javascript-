@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
     //마우스 포인터가 올라간 타이밍에 배경색을 변경
     elem.addEventListener('mouseover' , function(){
-        this.style.backgroundColor = 'Yellow';
+        this.style.backgroundColor = 'Yellow'; //여기서 this는 이벤트의 발생원을 나타낸다( = <div id= elem> )
     },false);
 
     //마우스 포인터가 벗어난 타이밍에 배경색을 되돌림
