@@ -1,0 +1,32 @@
++ className 사용
+
++ css
+.highlight{
+    background-color:  Yellow;
+}
+
++ html
+
+    <link rel="stylesheet" href="html/dom/dom.css">
+    <div id = "elem">마우스 포인터를 올리면 색이 변합니다.</div>
+    
++ js
+
+document.addEventListener('DOMContentLoaded', function(){
+    var elem = document.getElementById('elem');
+
+    //마우스 포인터가 올라간 타이밍에 배경색을 변경
+    elem.addEventListener('mouseover' , function(){
+        this.className = 'highlight';
+    },false);
+
+    //마우스 포인터가 벗어난 타이밍에 배경색을 되돌림
+    elem.addEventListener('mouseout' , function(){
+        this.className = '';
+    },false);
+
+
+},false);
+
+    
+    
