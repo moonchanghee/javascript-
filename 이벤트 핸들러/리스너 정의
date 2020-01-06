@@ -1,3 +1,5 @@
+https://m.blog.naver.com/PostView.nhn?blogId=azanghs&logNo=220364761896&proxyReferer=https%3A%2F%2Fwww.google.co.kr%2F
+
 # 태그내의 속성으로 선언하기
 + js
 
@@ -22,6 +24,14 @@ window.onload = function(){
 
 + html
 
-<input type="button" id= "btn"value="다이얼로그 표시" >
+<input type="button" id= "btn"value="다이얼로그 표시"
+
++ onload 이벤트 핸들러 => 콘텐츠 본체와 모든 이미지가 로드된 후에 실행
++ DOMContentLoaded 이벤트 리스너 => 콘텐츠 본체가 로드된 후에 실행(=이미지의 로드를 기다리지 않는다)
+대개의 처리는 이미지의 로드를 기다릴 필요가 없으므로 DOMContentLoaded 이벤트 리스너를 이용하여 스크립트의 시작 타이밍을 앞당길 수 있다
+이미지와 관련된 처리등 특별한 사유가 없는 한 페이지의 초기화 처리는 DOMCcontent
+
+
+
 
 
