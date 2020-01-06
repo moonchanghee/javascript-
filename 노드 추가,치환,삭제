@@ -1,0 +1,25 @@
+# 노드추가
+1. 요소/텍스트 노드 작성하기
+콘텐츠를 추가하려면 우선 createElement/createTextNode 메소드를 이용하여 새롭게 삽입할 요소/텍스트 노드를 생성한다
+2. 노드끼리 조립하기
+appendChild 메소드는 이러한 작업을 실시하는 역할을 한다. appenchild메소드느 추가된 순서대로 제일 마지막 자식 요소로서 지정된 요소를 추가한다.
+id.appendChild(anchor)
+3.속성노드 추가하기(createAttribute() 메소드 = 속성노드 생성)
+anchor.href = url.value
+=>
+var href = document.createAttribute('href');
+href.value = url.value;
+anchor.setAttributeNode(href);
+
+# 노드치환
+replaceChild 메소드
+elem.replaceChild(after , before)
+elem: 요소객체 , after : 치환 후의 노드 , before : 치환 대상의 노드
+
+# 노드삭제
+removeChild 메소드 
+elem.removeChild(node)
+elem : 객체 , node : 삭제 대상의 노드
+
+
+
