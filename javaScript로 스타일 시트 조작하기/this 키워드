@@ -1,0 +1,18 @@
+this 키워드는 문맥에 따라 변화하는 불가사의한 객체다
+
+document.addEventListener('DOMContent' , function(){
+    var data ={
+        title: 'java포켓 레퍼런스',
+        price: 26800,
+        show: function(){
+            console.log(this.title + '/' + this.price + '원');
+        }
+    };
+
+
+document.getElementById('btn').addEventListener('click' ,data.show,false);
+},false);
+
+
+결과물은 undefined 이다 두번째 리스너에서 디스는 첫번째리스너의 데이터객체 title,price를 가리키지 않고 발생원인 두번째리스너에서 (btn)을 
+가리키고 있다. 이 문제를 해결하려면 data.show.bind(data) bind 메소드를 사용해야한다.
