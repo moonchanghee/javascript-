@@ -58,3 +58,8 @@ router.get('/test', function(req, res, next) {
 템플릿 엔진
 동적인 파일과 정적인 파일의 장단점을 결합한 형태의 새로운 체계로 express가 지원하는 템플릿 엔진중에 가장 유명하고 많이 쓰이는 것이 ejs 와 pug이다
 ejs 는 html 태그에 부분적으로 입력 및 수정을 하는 방식이다. 
+
+
+
+
+
