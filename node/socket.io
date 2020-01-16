@@ -1,6 +1,9 @@
 
 https://victorydntmd.tistory.com/24  express 파일별 기능
 https://devriver.tistory.com/45     에러 
+https://kamang-it.tistory.com/entry/NodeJSSocketIOSocketIO-%EA%B8%B0%EC%B4%88-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-%EB%8B%A8%EC%9D%BC-%ED%86%B5%EC%8B%A0-serverclient-1
+정적파일 
+https://www.deok.me/entry/NodeJS-Express-SocketIO-%EB%A1%9C-%EC%B1%84%ED%8C%85-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0 채팅구현
 
 클라이언트란 서버에게 서비스를 요구하는 사용자나 컴퓨터이다.
 
