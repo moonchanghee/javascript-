@@ -60,6 +60,25 @@ router.get('/test', function(req, res, next) {
 ejs 는 html 태그에 부분적으로 입력 및 수정을 하는 방식이다. 
 
 
+export
 
+
+get
+
+url..
+
+남들에게 정보의 위치를 알려 주기위해 (url 주소를 보내어)
+
+()
+
+
+
+post
+
+긴글
+
+비번같은 숨겨서 전송되어야하는 경우
+
+(post 방식은 body-parser의 모듈을 가져와야 사용할 수 있다.)
 
 
