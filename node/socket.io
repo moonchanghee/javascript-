@@ -1,5 +1,6 @@
 
-https://victorydntmd.tistory.com/24  express 파일별 기능 
+https://victorydntmd.tistory.com/24  express 파일별 기능
+https://devriver.tistory.com/45     에러 
 
 클라이언트란 서버에게 서비스를 요구하는 사용자나 컴퓨터이다.
 
@@ -76,3 +77,5 @@ socket.on('서버에서 받을 이벤트명', function(데이터) {
   // 받은 데이터 처리
   socket.emit('서버로 보낼 이벤트명', 데이터);
 });
+
+
