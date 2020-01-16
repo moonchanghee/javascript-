@@ -68,4 +68,8 @@ fs.readFile('example.txt', 'utf-8', (err, result) => {
   socket.emit을 이용하면 해당 socket을 통해 상대편으로 전달하고, io.emit 을 이용하면 서버가 현재 접속해있는 모든 클라이언트에게 이벤트를 전달한다.
   
 
-
+var socket = io.connect('서버 주소');
+socket.on('서버에서 받을 이벤트명', function(데이터) {
+  // 받은 데이터 처리
+  socket.emit('서버로 보낼 이벤트명', 데이터);
+});
